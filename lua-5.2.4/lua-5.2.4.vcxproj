@@ -150,10 +150,10 @@
       <SubSystem>Windows</SubSystem>
     </Link>
     <PostBuildEvent>
-      <Command>md .\lib
-md .\lib\debug
-copy $(Configuration)\lua.lib .\lib\debug\
-copy $(Configuration)\lua.dll .\lib\debug\</Command>
+      <Command>md ..\lib
+md ..\lib\debug
+copy $(Configuration)\lua.lib ..\lib\debug\
+copy $(Configuration)\lua.dll ..\lib\debug\</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
